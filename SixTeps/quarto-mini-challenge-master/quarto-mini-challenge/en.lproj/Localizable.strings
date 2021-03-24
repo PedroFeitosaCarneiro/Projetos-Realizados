@@ -1,0 +1,125 @@
+/*
+  Localizable.strings
+  quarto-mini-challenge
+
+  Created by Guilherme Martins Dalosto de Oliveira on 16/05/20.
+  Copyright © 2020 Panterimar. All rights reserved.
+*/
+
+
+//UserDefaults
+"username" = "User";
+
+// Login
+"warningAccount" = "You already have an account";
+"warningAccountRequest" = "Do you want to keep the data of your existing account or create a new account?";
+"keepAccount" = "Keep account";
+"createAccount" = "Create new account";
+
+// Add Task
+
+"TaskCategory" = "What is the category of this task?";
+"TaskPriority" = "What is the priority of this task?";
+"TaskDifficulty" = "What is the difficulty of this task?";
+
+// Add Task List
+
+"OrganizationTip" = "You can rearrange your tasks according to your preferences";
+
+// User Profile
+
+"User" = "User";
+"Achievements" = "Achievements";
+"Tasks" = "Tasks";
+"Level" = "Level";
+"Work" = "Work";
+"Studies" = "Studies";
+"Health" = "Health";
+"Entertainment" = "Entertainment";
+"Others" = "Others";
+"progressTitle" = "Progress";
+
+// Settings
+
+"Name" = "Name";
+"Notifications" = "Notifications";
+"Sounds" = "Sounds";
+"Feedback" = "Feedback";
+"TaskLimit" = "Daily tasks limit";
+"UserSupport" = "User support";
+"Terms" = "Terms and conditions";
+"settings" = "Settings";
+
+"UserSupportVersion" = "Version Support 1.0";
+
+//DivisionType
+"High" = "Urgent";
+"Medium" = "Important";
+"Low" = "Delayable";
+
+//DivisionType
+"estagiario" = "Intern";
+"junior" = "Junior";
+"pleno" = "Full";
+"senior" = "Senior";
+"diretor" = "Manager";
+"ceo" = "CEO";
+
+//Difficulty Type
+"Easy" = "Quicky";
+"MediumD" = "Take a while";
+"Hard" = "Lasts forever";
+
+// OnBoarding
+
+"MotivationRanking" = "Keep going to climb in the Rank";
+"Start" = "Start";
+"FollowProgress" = "Track your progress and conquer achievements";
+"priorize" = "Prioritize activities and organize your day.";
+
+// Tasks
+
+"myTasks" = "My Tasks";
+"warning" = "Warning";
+"messageWarning" = "Come on! Do you really want to give up this task?";
+"cancel" = "Cancel";
+"Alert" = "Alert";
+"taskDone" = "This task has already been completed!";
+"orderTask" = "Perform your tasks in order,\nto perform any action on that task, it must be on the first!";
+"doAfter" = "Do later";
+"giveUp" = "Give\nup";
+"complete" = "Complete";
+
+// Ranking
+
+"MyProfile" = "My Profile";
+"profile" = "Perfil";
+
+// Ranking Row
+
+"Division" = "Division";
+"Tasks" = "Tasks";
+
+"notNow" = "Not now";
+"cantEmpty" = "The task name can`t be empty";
+
+"background" = "Background";
+"chooseOption" = "Choose an option";
+"cancel" = "Cancel";
+"gallery" = "Gallery";
+
+"emptyField" = "The field cannot be empty!";
+"error" = "Error";
+
+"red" = "Red";
+"blue" = "Blue";
+"darkBlue" = "Dark Blue";
+"lightBlue" = "Light Blue";
+"green" = "Green";
+"yellow" = "Yellow";
+"solidColors" = "Solid Colors";
+"nameRegistered" = "Name is already registered!";
+
+"placeusername" = "username";
+"organize" = "Organize your tasks in an order that suits you";
+"noActivity" = "Ops! You don't have scheduled tasks!";

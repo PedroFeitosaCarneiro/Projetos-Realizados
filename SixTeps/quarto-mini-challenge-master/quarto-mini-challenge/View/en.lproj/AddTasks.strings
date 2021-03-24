@@ -1,0 +1,51 @@
+
+/* Class = "UISegmentedControl"; 8Ru-ga-bk1.segmentTitles[0] = "Trabalho"; ObjectID = "8Ru-ga-bk1"; */
+"8Ru-ga-bk1.segmentTitles[0]" = "Work";
+
+/* Class = "UISegmentedControl"; 8Ru-ga-bk1.segmentTitles[1] = "Estudos"; ObjectID = "8Ru-ga-bk1"; */
+"8Ru-ga-bk1.segmentTitles[1]" = "Studies";
+
+/* Class = "UISegmentedControl"; 8Ru-ga-bk1.segmentTitles[2] = "Saúde"; ObjectID = "8Ru-ga-bk1"; */
+"8Ru-ga-bk1.segmentTitles[2]" = "Health";
+
+/* Class = "UISegmentedControl"; 8Ru-ga-bk1.segmentTitles[3] = "Lazer"; ObjectID = "8Ru-ga-bk1"; */
+"8Ru-ga-bk1.segmentTitles[3]" = "Entertainment";
+
+/* Class = "UISegmentedControl"; 8Ru-ga-bk1.segmentTitles[4] = "Outra"; ObjectID = "8Ru-ga-bk1"; */
+"8Ru-ga-bk1.segmentTitles[4]" = "Other";
+
+/* Class = "UITextField"; placeholder = "Escreva aqui sua atividade"; ObjectID = "BO4-Gh-ogI"; */
+"BO4-Gh-ogI.placeholder" = "Write here your task";
+
+/* Class = "UILabel"; text = "Em que área ela mais se encaixa?"; ObjectID = "Gxc-uE-mvs"; */
+"Gxc-uE-mvs.text" = "What is the main topic of your task?";
+
+/* Class = "UILabel"; text = "Quanto tempo deve levar?"; ObjectID = "V9Q-ua-EJM"; */
+"V9Q-ua-EJM.text" = "How long the task will take?";
+
+/* Class = "UILabel"; text = "Qual a prioridade dessa atividade?"; ObjectID = "W63-jg-WVe"; */
+"W63-jg-WVe.text" = "What is the priority of this task?";
+
+/* Class = "UILabel"; text = "35"; ObjectID = "mfb-8l-AE7"; */
+"mfb-8l-AE7.text" = "35";
+
+/* Class = "UISegmentedControl"; nbe-Ez-7pi.segmentTitles[0] = "Urgente"; ObjectID = "nbe-Ez-7pi"; */
+"nbe-Ez-7pi.segmentTitles[0]" = "Urgent";
+
+/* Class = "UISegmentedControl"; nbe-Ez-7pi.segmentTitles[1] = "Importante"; ObjectID = "nbe-Ez-7pi"; */
+"nbe-Ez-7pi.segmentTitles[1]" = "Important";
+
+/* Class = "UISegmentedControl"; nbe-Ez-7pi.segmentTitles[2] = "Pode esperar"; ObjectID = "nbe-Ez-7pi"; */
+"nbe-Ez-7pi.segmentTitles[2]" = "Delayable";
+
+/* Class = "UISegmentedControl"; w5o-CZ-MEE.segmentTitles[0] = "Rapidinho"; ObjectID = "w5o-CZ-MEE"; */
+"w5o-CZ-MEE.segmentTitles[0]" = "Quicky";
+
+/* Class = "UISegmentedControl"; w5o-CZ-MEE.segmentTitles[1] = "Leva um tempo"; ObjectID = "w5o-CZ-MEE"; */
+"w5o-CZ-MEE.segmentTitles[1]" = "Take a while";
+
+/* Class = "UISegmentedControl"; w5o-CZ-MEE.segmentTitles[2] = "Demora"; ObjectID = "w5o-CZ-MEE"; */
+"w5o-CZ-MEE.segmentTitles[2]" = "Lasts forever";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "wFO-Vj-rLB"; */
+"wFO-Vj-rLB.normalTitle" = "OK";

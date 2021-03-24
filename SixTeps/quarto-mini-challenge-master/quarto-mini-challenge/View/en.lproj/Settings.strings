@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Configurações"; ObjectID = "0LY-37-ahp"; */
+"0LY-37-ahp.text" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Alterar foto"; ObjectID = "Im8-Sh-uql"; */
+"Im8-Sh-uql.normalTitle" = "Change Picture";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kEb-oK-GcV"; */
+"kEb-oK-GcV.text" = "Label";

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CategoryLevelCD" representedClassName="CategoryLevelCD" syncable="YES">
+        <attribute name="category_id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="category_rec_id" attributeType="String" defaultValueString=""/>
+        <attribute name="points_amount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TaskBlockCD" representedClassName="TaskBlockCD" syncable="YES">
+        <attribute name="creation_date" attributeType="String" defaultValueString="30/04/20 17:36"/>
+        <attribute name="current" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="difficulty_limit" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taskBlock_uuid" attributeType="UUID" defaultValueString="E621E1F8-C36C-495A-93FC-0C247A3E6E5F" usesScalarValueType="NO"/>
+        <attribute name="tasks_uuid" optional="YES" attributeType="Transformable" customClassName="[UUID]"/>
+    </entity>
+    <entity name="TaskCD" representedClassName="TaskCD" syncable="YES">
+        <attribute name="category_id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="difficulty_id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="done_amount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="is_done" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="TaskName"/>
+        <attribute name="priority_id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="score" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="task_uuid" attributeType="UUID" defaultValueString="E621E1F8-C36C-495A-93FC-0C247A3E6E5F" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="UserCD" representedClassName="UserCD" syncable="YES">
+        <attribute name="backgroundPhoto" optional="YES" attributeType="Binary"/>
+        <attribute name="pointsAmount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="profile_picture" optional="YES" attributeType="Binary"/>
+        <attribute name="tasks_amount_performed" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="user_rec_id" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CategoryLevelCD" positionX="-18" positionY="99" width="128" height="88"/>
+        <element name="TaskBlockCD" positionX="-36" positionY="90" width="128" height="118"/>
+        <element name="TaskCD" positionX="-54" positionY="54" width="128" height="163"/>
+        <element name="UserCD" positionX="-63" positionY="-18" width="128" height="133"/>
+    </elements>
+</model>

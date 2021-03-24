@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "Apelido"; ObjectID = "KBW-1f-iJC"; */
+"KBW-1f-iJC.placeholder" = "Username";
+
+/* Class = "UILabel"; text = "Personalize seu perfil para deixar-lo com a sua cara"; ObjectID = "acr-Yj-ce6"; */
+"acr-Yj-ce6.text" = "Customize your profile to suit you best";
+
+/* Class = "UIButton"; normalTitle = "Começar"; ObjectID = "gsV-ej-EOQ"; */
+"gsV-ej-EOQ.normalTitle" = "Start";
+
+/* Class = "UIButton"; normalTitle = "Escolher Foto"; ObjectID = "hlY-TT-rB9"; */
+"hlY-TT-rB9.normalTitle" = "Choose Picture";

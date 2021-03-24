@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EPf-9L-Icd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tasks View Controller-->
+        <scene sceneID="cOQ-7l-Ity">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="HNf-d2-TVa" customClass="TasksViewController" customModule="IvyLeeStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JGp-eJ-dEJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mej-PH-zoi">
+                                <rect key="frame" x="168" y="791" width="226" height="50"/>
+                                <state key="normal" backgroundImage="botao-adicionar-tarefas-iphoneX"/>
+                                <connections>
+                                    <action selector="didTapOnAddTaskButton:" destination="HNf-d2-TVa" eventType="touchUpInside" id="GCe-6G-u0Q"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRc-mT-8DN">
+                                <rect key="frame" x="106" y="791" width="202" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KRc-mT-8DN" secondAttribute="height" multiplier="202:47" id="cVT-bq-YSG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="20"/>
+                                <state key="normal" title="Finalizar lista" backgroundImage="end-task-button-enabled">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="disabled" backgroundImage="end-task-button-disabled"/>
+                                <connections>
+                                    <action selector="didTapOnEndTaskButton:" destination="HNf-d2-TVa" eventType="touchUpInside" id="GgP-lf-X5O"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="yCr-Uq-rVR">
+                                <rect key="frame" x="83" y="160" width="248" height="49"/>
+                                <string key="text">Adicione 6 atividades que 
+você deve realizar</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sAd-ZB-Wwc">
+                                <rect key="frame" x="27" y="260" width="361" height="402"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="58" id="8wY-lK-eId" customClass="TaskCell" customModule="IvyLeeStudy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="361" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8wY-lK-eId" id="ANQ-bj-cSH">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="58"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCellEditing" rowHeight="58" id="1cd-sf-3d3" customClass="TaskCellEditing" customModule="IvyLeeStudy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="86" width="361" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1cd-sf-3d3" id="eMS-GH-hxK">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="58"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmptyCell" rowHeight="58" id="YBx-37-XX9" customClass="EmptyTableViewCell" customModule="IvyLeeStudy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="144" width="361" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YBx-37-XX9" id="naN-9E-FPn">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="58"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adicionar tarefa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOX-Pc-lY9">
+                                                    <rect key="frame" x="110.5" y="17" width="140" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                                    <color key="textColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="emptyCellBorder-iphoneX" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-zc-9nO">
+                                                    <rect key="frame" x="-0.5" y="-13" width="361" height="84"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addTaskLbl" destination="WOX-Pc-lY9" id="7Ya-CC-FS9"/>
+                                            <outlet property="borderImgView" destination="fKg-zc-9nO" id="4XV-rM-1a8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LsA-9Q-lFH" firstAttribute="bottom" secondItem="KRc-mT-8DN" secondAttribute="bottom" constant="24" id="1Wp-GG-A38"/>
+                            <constraint firstItem="LsA-9Q-lFH" firstAttribute="bottom" secondItem="Mej-PH-zoi" secondAttribute="bottom" constant="21" id="Eop-0p-Xig"/>
+                            <constraint firstItem="yCr-Uq-rVR" firstAttribute="width" secondItem="sAd-ZB-Wwc" secondAttribute="width" id="W0z-Ey-Ym2"/>
+                            <constraint firstItem="LsA-9Q-lFH" firstAttribute="trailing" secondItem="Mej-PH-zoi" secondAttribute="trailing" constant="20" id="Zuq-O8-stq"/>
+                            <constraint firstItem="KRc-mT-8DN" firstAttribute="height" secondItem="JGp-eJ-dEJ" secondAttribute="height" multiplier="0.0524554" id="dy2-oy-yAE"/>
+                            <constraint firstItem="yCr-Uq-rVR" firstAttribute="centerX" secondItem="JGp-eJ-dEJ" secondAttribute="centerX" id="m8r-hN-Q0I"/>
+                            <constraint firstItem="yCr-Uq-rVR" firstAttribute="top" secondItem="LsA-9Q-lFH" secondAttribute="top" constant="20" id="php-ih-ZJd"/>
+                            <constraint firstItem="KRc-mT-8DN" firstAttribute="centerX" secondItem="LsA-9Q-lFH" secondAttribute="centerX" id="vDT-GL-7Is"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LsA-9Q-lFH"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="J1a-aM-Nrg"/>
+                    <connections>
+                        <outlet property="addTasksButton" destination="Mej-PH-zoi" id="xjr-XO-Jxe"/>
+                        <outlet property="endTaskBlockButton" destination="KRc-mT-8DN" id="lVf-cy-Bnv"/>
+                        <outlet property="endTaskBlockLabel" destination="yCr-Uq-rVR" id="bDy-bi-9tm"/>
+                        <outlet property="tasksTableView" destination="sAd-ZB-Wwc" id="78Y-wD-kdc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbH-Up-D4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.82608695652186" y="136.60714285714286"/>
+        </scene>
+        <!--Clear Nav Bar Controller-->
+        <scene sceneID="MgB-50-wIx">
+            <objects>
+                <navigationController storyboardIdentifier="taskNav" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="EPf-9L-Icd" customClass="ClearNavBarController" customModule="IvyLeeStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="X73-Zl-oOr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HNf-d2-TVa" kind="relationship" relationship="rootViewController" id="FWi-yy-IRk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dl6-YO-zAw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="botao-adicionar-tarefas-iphoneX" width="226" height="50"/>
+        <image name="emptyCellBorder-iphoneX" width="361" height="84"/>
+        <image name="end-task-button-disabled" width="202" height="47"/>
+        <image name="end-task-button-enabled" width="202" height="47"/>
+    </resources>
+</document>

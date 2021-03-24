@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mI0-KT-eic">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="sz5-yM-pmt">
+            <objects>
+                <viewController id="mI0-KT-eic" customClass="LoginViewController" customModule="IvyLeeStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UrG-kI-uKk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sr7-50-4sd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xt-ri-DF2">
+                                <rect key="frame" x="47" y="71" width="320" height="77"/>
+                                <string key="text">No Ranking você pode mostrar todo o seu potencial.
+Faça login para entrar.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" name="FontBlackWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Xt-ri-DF2" firstAttribute="top" secondItem="oP0-jX-08U" secondAttribute="top" constant="27" id="9fJ-V6-CCb"/>
+                            <constraint firstItem="sr7-50-4sd" firstAttribute="leading" secondItem="oP0-jX-08U" secondAttribute="leading" id="ANq-Is-XF8"/>
+                            <constraint firstItem="6Xt-ri-DF2" firstAttribute="leading" secondItem="oP0-jX-08U" secondAttribute="leading" constant="47" id="P3y-us-DAT"/>
+                            <constraint firstItem="sr7-50-4sd" firstAttribute="top" secondItem="UrG-kI-uKk" secondAttribute="top" id="gtM-bF-165"/>
+                            <constraint firstItem="oP0-jX-08U" firstAttribute="trailing" secondItem="sr7-50-4sd" secondAttribute="trailing" id="mdC-om-ol1"/>
+                            <constraint firstAttribute="trailing" secondItem="6Xt-ri-DF2" secondAttribute="trailing" constant="47" id="okA-Jp-bdJ"/>
+                            <constraint firstAttribute="bottom" secondItem="sr7-50-4sd" secondAttribute="bottom" id="zNJ-N7-4ee"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oP0-jX-08U"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImgView" destination="sr7-50-4sd" id="ELs-Pk-iHp"/>
+                        <outlet property="loginLabel" destination="6Xt-ri-DF2" id="5VE-tV-mjC"/>
+                        <outlet property="topConstraint" destination="9fJ-V6-CCb" id="H8V-sU-wIi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvP-mK-ER1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="FontBlackWhite">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

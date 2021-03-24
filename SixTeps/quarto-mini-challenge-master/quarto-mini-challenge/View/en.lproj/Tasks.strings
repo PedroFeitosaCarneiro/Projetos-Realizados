@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Finalizar lista"; ObjectID = "KRc-mT-8DN"; */
+"KRc-mT-8DN.normalTitle" = "Finish list";
+
+/* Class = "UILabel"; text = "Adicionar tarefa"; ObjectID = "WOX-Pc-lY9"; */
+"WOX-Pc-lY9.text" = "Add Task";
+
+/* Class = "UILabel"; text = "Adicione 6 atividades que \nvocê deve realizar"; ObjectID = "yCr-Uq-rVR"; */
+"yCr-Uq-rVR.text" = "Add 6 daily tasks that you \nmust do";

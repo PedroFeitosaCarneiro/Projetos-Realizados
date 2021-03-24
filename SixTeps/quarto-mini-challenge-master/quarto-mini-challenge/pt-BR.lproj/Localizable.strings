@@ -1,0 +1,127 @@
+ /*
+  Localizable.strings
+  quarto-mini-challenge
+
+  Created by Guilherme Martins Dalosto de Oliveira on 16/05/20.
+  Copyright © 2020 Panterimar. All rights reserved.
+*/
+
+
+
+//UserDefaults
+"username" = "Usuário";
+
+// Login
+"warningAccount" = "Você já possui uma conta";
+"warningAccountRequest" = "Deseja utilizar os dados da sua conta já criada ou começar uma conta nova com os dados deste iPhone?";
+"keepAccount" = "Manter a conta";
+"createAccount" = "Criar nova conta";
+
+// Add Task
+
+"TaskCategory" = "Qual é a categoria dessa tarefa?";
+"TaskPriority" = "Qual é a prioridade dessa tarefa?";
+"TaskDifficulty" = "Qual é a dificuldade dessa tarefa?";
+
+// Add Task List
+
+"OrganizationTip" = "Agora você pode reorganizar as tarefas na melhor ordem para você.";
+
+// User Profile
+
+"User" = "Usuário";
+"Achievements" = "Conquistas";
+"Tasks" = "Tarefas";
+"Level" = "Nível";
+"Work" = "Trabalho";
+"Studies" = "Estudos";
+"Health" = "Saúde";
+"Entertainment" = "Lazer";
+"Others" = "Outros";
+"progressTitle" = "Progresso";
+
+// Settings
+
+"Name" = "Nome";
+"Notifications" = "Notificações";
+"Sounds" = "Sons";
+"Feedback" = "Feedback tátil";
+"TaskLimit" = "Limite de tarefas diárias";
+"UserSupport" = "Suporte ao usuário";
+"Terms" = "Termos e condições";
+"settings" = "Configurações";
+
+"UserSupportVersion" = "Suporte Versão 1.0";
+
+//DivisionType
+"High" = "Urgente";
+"Medium" = "Importante";
+"Low" = "Pode Esperar";
+
+//DivisionType
+"estagiario" = "Estagiário";
+"junior" = "Júnior";
+"pleno" = "Pleno";
+"senior" = "Sênior";
+"diretor" = "Diretor";
+"ceo" = "CEO";
+
+//Difficulty Type
+"Easy" = "Rapidinho";
+"MediumD" = "Leva um tempo";
+"Hard" = "Demora";
+
+// OnBoarding
+
+"MotivationRanking" = "Mantenha o ritmo para mandar bem no Ranking";
+"Start" = "Começar";
+"FollowProgress" = "Acompanhe o seu progresso e colecione conquistas";
+"priorize" = "Priorize atividades e organize o seu dia.";
+
+// Tasks
+
+"myTasks" = "Minhas tarefas";
+"warning" = "Aviso";
+"messageWarning" = "Poxa! Você quer mesmo desistir dessa tarefa?";
+"cancel" = "Cancelar";
+"Alert" = "Alerta";
+"taskDone" = "Essa tarefa já foi concluída!";
+"orderTask" ="Execute as suas tarefas na ordem,\npara realizar alguma ação nessa tarefa, ela deve estar em primeiro lugar!";
+"doAfter" = "Fazer\ndepois";
+"giveUp" = "Desistir";
+"complete" = "Concluir";
+
+// Ranking
+
+"MyProfile" = "Meu perfil";
+"profile" = "Perfil";
+// Ranking Row
+
+"Division" = "Divisão";
+"Tasks" = "Tarefas";
+
+"notNow" = "Agora não";
+
+"cantEmpty" = "O nome da tarefa não pode ser vazio!";
+
+"background" = "Plano de fundo";
+"chooseOption" = "Escolha uma opção";
+"cancel" = "Cancelar";
+"gallery" = "Galeria";
+
+"emptyField" = "O campo não pode ser vazio!";
+"error" = "Erro";
+
+
+"red" = "Vermelho";
+"blue" = "Azul";
+"darkBlue" = "Azul Escuro";
+"lightBlue" = "Azul Claro";
+"green" = "Verde";
+"yellow" = "Amarelo";
+"solidColors" = "Cores Sólidas";
+"nameRegistered" = "Nome já está registrado!";
+
+"placeusername" = "Nome de usuário";
+"organize" = "Agora organize as atividades na melhor ordem para você cumprir-las";
+"noActivity" = "Ops! Você ainda não tem atividades programadas";

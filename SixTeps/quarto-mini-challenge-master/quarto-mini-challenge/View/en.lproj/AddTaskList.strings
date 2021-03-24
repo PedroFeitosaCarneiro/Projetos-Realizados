@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Finalizar Lista"; ObjectID = "Bwp-fW-UCo"; */
+"Bwp-fW-UCo.normalTitle" = "Finish List";
+
+/* Class = "UILabel"; text = "Adicione 6 atividades que você deve realizar"; ObjectID = "Ccj-QQ-gHs"; */
+"Ccj-QQ-gHs.text" = "Add 6 daily tasks that you must do";
+
+/* Class = "UILabel"; text = "Adicionar tarefa"; ObjectID = "psN-3v-K9c"; */
+"psN-3v-K9c.text" = "Add Task";
