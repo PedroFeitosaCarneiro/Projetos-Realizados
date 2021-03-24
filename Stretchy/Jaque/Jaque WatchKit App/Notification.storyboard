@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="QQA-xx-vY1">
+            <objects>
+                <notificationController id="Pva-nl-l1p">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="wIb-jx-MhN"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="mascotState" id="PIs-vI-OoF"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="wIb-jx-MhN" id="3FQ-2X-Qh1"/>
+                        <segue destination="phT-D2-WFm" kind="relationship" relationship="dynamicNotificationInterface" id="w9L-71-mgE"/>
+                        <segue destination="bRw-dP-YaK" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="kom-42-ZE3"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-55" y="163"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="i46-rv-UnZ">
+            <objects>
+                <notificationController id="8pQ-D3-Ajh">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="DOU-Kx-cxx"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="exercise" id="FsL-ib-CRW"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="DOU-Kx-cxx" id="mM5-1w-kBB"/>
+                        <segue destination="Pcj-6S-XWq" kind="relationship" relationship="dynamicNotificationInterface" id="1WU-9G-89Y"/>
+                        <segue destination="ZLp-6N-XUU" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="Ien-85-tXH"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-95" y="950"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="EAC-3C-U00">
+            <objects>
+                <controller id="phT-D2-WFm" customClass="NotificationController" customModule="Jaque_WatchKit_Extension">
+                    <items>
+                        <group width="136" height="81" alignment="left" id="QuW-lc-NUn">
+                            <items>
+                                <imageView width="43" alignment="left" id="bdY-FP-LWD"/>
+                                <label alignment="left" text="Title" textAlignment="left" numberOfLines="4" id="aqt-Cv-bdp"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="img" destination="bdY-FP-LWD" id="hon-2n-d2k"/>
+                        <outlet property="titleLabel" destination="aqt-Cv-bdp" id="rVp-DM-4QB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="238" y="197"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="kDi-2R-UiA">
+            <objects>
+                <controller animationDuration="1" id="bRw-dP-YaK" customClass="NotificationController" customModule="Jaque_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="c6g-Sq-ICe">
+                            <items>
+                                <label alignment="left" text="Title" numberOfLines="3" id="iaI-72-dkN"/>
+                            </items>
+                        </group>
+                        <group width="134" height="79" alignment="left" id="o0q-Zk-woY">
+                            <items>
+                                <imageView width="134" height="79" alignment="left" image="pencil.slash" catalog="system" contentMode="scaleAspectFill" animationDuration="1" id="uda-Ec-ide"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="img" destination="uda-Ec-ide" id="VS2-h3-ptz"/>
+                        <outlet property="titleLabel" destination="iaI-72-dkN" id="jbn-eC-8Ix"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="245" y="-127.5"/>
+        </scene>
+        <!--Notification Exercise Controller-->
+        <scene sceneID="NI0-5p-TaJ">
+            <objects>
+                <controller id="Pcj-6S-XWq" customClass="NotificationExerciseController" customModule="Jaque_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="TFC-TS-QYR">
+                            <items>
+                                <label alignment="left" text="Title" numberOfLines="3" id="KBz-SD-c2q"/>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Subtitle" numberOfLines="4" id="hH4-Pj-5Md"/>
+                    </items>
+                    <connections>
+                        <outlet property="subtitleLabel" destination="hH4-Pj-5Md" id="p6o-86-YGD"/>
+                        <outlet property="titleLabel" destination="KBz-SD-c2q" id="j7u-oD-Hwz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="245" y="1017"/>
+        </scene>
+        <!--Notification Exercise Controller-->
+        <scene sceneID="ap9-gC-jRS">
+            <objects>
+                <controller id="ZLp-6N-XUU" customClass="NotificationExerciseController" customModule="Jaque_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="bbn-2l-4As">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" contentMode="scaleAspectFit" id="P9r-C9-v7E"/>
+                                <label alignment="left" text="Title" numberOfLines="3" id="awa-BY-ExU"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="img" destination="P9r-C9-v7E" id="yrB-51-Mrf"/>
+                        <outlet property="titleLabel" destination="awa-BY-ExU" id="PO5-55-I0w"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="238" y="665"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil.slash" catalog="system" width="128" height="112"/>
+    </resources>
+</document>

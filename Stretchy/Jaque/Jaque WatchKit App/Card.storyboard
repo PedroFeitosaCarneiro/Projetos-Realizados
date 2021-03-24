@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Atividades-->
+        <scene sceneID="vVJ-Yh-upz">
+            <objects>
+                <controller identifier="cards" title="Atividades" id="wOt-xI-cj2" customClass="CardInterfaceController" customModule="Jaque_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.80000000000000004" alignment="left" layout="vertical" id="zD9-H6-9Eu">
+                            <items>
+                                <label width="1" height="0.29999999999999999" alignment="center" text="Label" textAlignment="center" numberOfLines="2" id="4Ha-87-NAu">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                    <variation key="device=watch40mm" heightAdjustment="10"/>
+                                </label>
+                                <imageView width="1" height="0.69999999999999996" alignment="center" contentMode="scaleAspectFit" id="avC-op-1fW">
+                                    <variation key="device=watch40mm" heightAdjustment="-10"/>
+                                </imageView>
+                            </items>
+                            <variation key="device=watch40mm" heightAdjustment="10"/>
+                        </group>
+                        <group alignment="left" radius="20" id="gC6-f1-Dji">
+                            <items>
+                                <button width="1" alignment="left" title="Button" id="icg-lh-bAQ">
+                                    <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                                    <connections>
+                                        <action selector="acceptCard" destination="wOt-xI-cj2" id="GxF-E4-GGL"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="acceptButtonView" destination="icg-lh-bAQ" id="9K1-Eq-fzE"/>
+                        <outlet property="imageCardView" destination="avC-op-1fW" id="RSg-mn-3q4"/>
+                        <outlet property="titleCardView" destination="4Ha-87-NAu" id="DIS-91-xB1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-78.347826086956516" y="5.3125"/>
+        </scene>
+    </scenes>
+</document>

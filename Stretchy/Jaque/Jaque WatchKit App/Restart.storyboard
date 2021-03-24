@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Reiniciar-->
+        <scene sceneID="UTQ-PQ-KYu">
+            <objects>
+                <controller identifier="restart" title="Reiniciar" id="R7u-zj-6eI" customClass="RestartInterfaceController" customModule="Jaque_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.10000000000000001" alignment="left" id="eEw-hI-ukh"/>
+                        <group width="1" height="0.59999999999999998" alignment="left" layout="vertical" id="SIN-5H-Tus">
+                            <items>
+                                <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="KeN-Pd-fsH"/>
+                                <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="3" id="jcJ-FT-e6i"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.10000000000000001" alignment="left" id="rcX-tv-XSJ">
+                            <variation key="device=watch40mm" heightAdjustment="-5"/>
+                        </group>
+                        <group width="1" alignment="left" radius="20" id="JXr-EI-cCD">
+                            <items>
+                                <button width="1" alignment="left" title="Button" id="Uak-SS-tDf">
+                                    <connections>
+                                        <action selector="restart" destination="R7u-zj-6eI" id="5n1-Vv-jXt"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="messageView" destination="jcJ-FT-e6i" id="SbI-w1-tFL"/>
+                        <outlet property="restartButton" destination="Uak-SS-tDf" id="iU4-AC-eg8"/>
+                        <outlet property="titleView" destination="KeN-Pd-fsH" id="wDO-N6-af1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="7" y="21"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,77 @@
+/* 
+  LocalizableStrings.strings
+  Jaque
+
+  Created by Pedro Paulo Feitosa Rodrigues Carneiro on 03/07/20.
+  Copyright © 2020 Lelio Jorge Junior. All rights reserved.
+*/
+
+//CARDS
+
+"activities" = "Activities";
+
+// Botão de confirmar card
+"confirmButton" = "Accept";
+//Botão de cancelar o card
+"cancelButton" = "Cancel";
+
+//Caminhada
+"walk" = "Walk";
+
+//Alongamento de pescoço;
+"neckStretch" = "Neck stretch";
+
+//Alongamento de braço
+"armStretch" = "Arm stretch";
+
+//Alongamento de mão
+"handStretch" = "Hand stretch";
+
+//Agora não
+"notNow" = "Not now";
+
+
+//ACHIEVEMENTS
+
+"a_Hand" =  "So far, you have done %@ hand strechs";
+
+"a_Neck" =  "So far, you have done %@ neck strechs";
+
+"a_Arm" =  "So far, you have done %@ arm strechs";
+
+"a_Walk" = "You took %@ steps";
+
+"a_Stair" = "You have climbed %@ steps";
+
+"a_Stand" = "You stood %@ minutes standing";
+
+"back" = "Back";
+
+//NOTIFICATIONS
+
+"n_MascotState" = "Your buddy is tired!";
+
+"n_Exercise1" = "Help your buddy!!";
+
+"n_Exercise2" = "Your buddy looks tired! What about some strechy";
+
+"n_Open" = "Open";
+
+"n_NotNow" = "Maybe another time. In about 10 minutes !?";
+
+//RESTART
+
+"r_DeathMessage" = "With great power comes great responsibility is widely attributed";
+
+"r_Tittle" = "Broto died";
+
+"r_Restart" = "Restart";
+
+//Onboarding
+
+"onboarding1" ="Hello there, I'm Broto, your stretching friend!";
+"onboarding2" ="I will remind you to stretch out during the day.";
+"onboarding3" ="And that's why i need you to turn on notifications.";
+"onboarding4" ="How about I help you showing you your achievements?";
+"onboarding5" ="Click on me to see them!";
+"onboarding6" ="Let's start? Hit the button!";

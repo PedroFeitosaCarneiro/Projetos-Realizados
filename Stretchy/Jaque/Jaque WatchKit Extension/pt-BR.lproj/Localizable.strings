@@ -1,0 +1,79 @@
+/* 
+  LocalizableStrings.strings
+  Jaque
+
+  Created by Pedro Paulo Feitosa Rodrigues Carneiro on 03/07/20.
+  Copyright © 2020 Lelio Jorge Junior. All rights reserved.
+*/
+
+//CARDS
+
+
+"activities" = "Atividades";
+
+// Botão de confirmar card
+"confirmButton" = "Confirmar";
+//Botão de cancelar o card
+"cancelButton" = "Cancelar";
+
+//Caminhada
+"walk" = "Caminhada";
+
+//Alongamento de pescoço;
+"neckStretch" = "Alongamento de pescoço";
+
+//Alongamento de braço
+"armStretch" = "Alongamento de braço";
+
+//Alongamento de mão
+"handStretch" = "Alongamento de mãos";
+
+//Agora não
+"notNow" = "Não quero fazer nada agora";
+
+
+//ACHIEVEMENTS
+
+"a_Hand" = "Você fez %@ alongamentos de mão";
+
+"a_Neck" = "Você fez %@ alongamentos de pescoço";
+
+"a_Arm" = "Você fez %@ alongamentos de braço";
+
+"a_Walk" = "Você deu %@ passos";
+
+"a_Stair" = "Você subiu %@ degraus";
+
+"a_Stand" = "Você ficou %@ minutos em pé";
+
+"back" = "Voltar";
+
+//NOTIFICATIONS
+
+
+"n_MascotState" = "Seu mascote está cansado!";
+
+"n_Exercise1" = "Ajude seu mascote!";
+
+"n_Exercise2" = "Pareçe que ele está cansado!";
+
+"n_Open" = "Abrir";
+
+"n_NotNow" = "Quem tal daqui á 10 minutos!?";
+
+//RESTART
+
+"r_DeathMessage" = "Com grandes poderes vem grandes responsabilidades";
+
+"r_Tittle" = "Broto morreu";
+
+"r_Restart" = "Recomeçar";
+
+//Onboarding
+
+"onboarding1" ="Olá, eu sou o Broto, seu amigo de alongamento!";
+"onboarding2" ="Irei te lembrar de se alongar duante o dia.";
+"onboarding3" ="Por isso ative as notificações.";
+"onboarding4" ="Que tal eu te ajudar em suas conquistas?";
+"onboarding5" ="Clique em mim futuramente para vê-las.";
+"onboarding6" ="Vamos começar? Clique no botão abaixo.";

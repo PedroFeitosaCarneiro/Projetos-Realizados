@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E0F5621249A8B0400BDF38E /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0F5620249A8B0400BDF38E /* LocalNotification.swift */; };
+		2E0F5624249AB8F000BDF38E /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0F5623249AB8F000BDF38E /* Notification.storyboard */; };
+		2E0F5627249ABB5B00BDF38E /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0F5626249ABB5B00BDF38E /* Notification.swift */; };
+		2E2767B0249D25EE000E7A35 /* NotificationExerciseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2767AF249D25EE000E7A35 /* NotificationExerciseController.swift */; };
+		3A340402249BFD7F00DF3600 /* HealthKitFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A340401249BFD7F00DF3600 /* HealthKitFormatter.swift */; };
+		3A340404249BFDC600DF3600 /* AchievementsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A340403249BFDC600DF3600 /* AchievementsController.swift */; };
+		3A340406249BFDE300DF3600 /* Classification+Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A340405249BFDE300DF3600 /* Classification+Classes.swift */; };
+		3A340409249C037900DF3600 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A340408249C037900DF3600 /* UserDefault.swift */; };
+		3A5F8C272497F346003A8859 /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F8C262497F346003A8859 /* Exercises.swift */; };
+		3A9C38932497FD9100E434D9 /* MascotState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C38922497FD9100E434D9 /* MascotState.swift */; };
+		3A9EEFE224ABC5E90071865E /* AchievementsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9EEFE124ABC5E90071865E /* AchievementsSB.storyboard */; };
+		3A9EEFE624ABC70E0071865E /* AchievementsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EEFE524ABC70E0071865E /* AchievementsInterfaceController.swift */; };
+		3AA34F0724A15BD200D69E07 /* PresentRestartControllet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA34F0624A15BD200D69E07 /* PresentRestartControllet.swift */; };
+		3AB103DA24AFABD200686887 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AB103DC24AFABD200686887 /* Localizable.strings */; };
+		3AB103DE24AFADF400686887 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AB103DC24AFABD200686887 /* Localizable.strings */; };
+		3AB103DF24AFADF500686887 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AB103DC24AFABD200686887 /* Localizable.strings */; };
+		3AC8362C2497EEE100692393 /* MascotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8362B2497EEE100692393 /* MascotController.swift */; };
+		3AE27A312497E70500CEC01E /* Mascot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE27A302497E70500CEC01E /* Mascot.swift */; };
+		3AE27A332497E74600CEC01E /* Exercisable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE27A322497E74600CEC01E /* Exercisable.swift */; };
+		3AE27A352497E76200CEC01E /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE27A342497E76200CEC01E /* Achievements.swift */; };
+		A1259ABB249E9C370094E393 /* MascotAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1259ABA249E9C370094E393 /* MascotAnimations.swift */; };
+		A12D87B624A4373700A0FB12 /* Infoa.plist in Resources */ = {isa = PBXBuildFile; fileRef = A12D87B524A4373700A0FB12 /* Infoa.plist */; };
+		A12D87B724A4373700A0FB12 /* Infoa.plist in Resources */ = {isa = PBXBuildFile; fileRef = A12D87B524A4373700A0FB12 /* Infoa.plist */; };
+		A19C1FB124A658D6000B9E18 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C1FB024A658D6000B9E18 /* Onboarding.storyboard */; };
+		A19D7B3E24A9639800541B15 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19D7B3D24A9639800541B15 /* OnboardingView.swift */; };
+		A19D7B4024A965D000541B15 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19D7B3F24A965D000541B15 /* OnboardingData.swift */; };
+		A19D7B4224A966FF00541B15 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19D7B4124A966FE00541B15 /* OnboardingModel.swift */; };
+		A19EDB2824A98AF100F021E2 /* FinalOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19EDB2724A98AF100F021E2 /* FinalOnboardingView.swift */; };
+		A1A4805424A96F5D00BFF329 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4805324A96F5D00BFF329 /* OnboardingViewModel.swift */; };
+		A1A4805624A97CA500BFF329 /* OnboardingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4805524A97CA500BFF329 /* OnboardingScene.swift */; };
+		A1B2B99B249BF957007F1D1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE64BE8249174370091AAC5 /* Assets.xcassets */; };
+		A1D31D69249AA846008AB737 /* MascotInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D31D68249AA846008AB737 /* MascotInterface.storyboard */; };
+		A1D31D6B249AA8E1008AB737 /* MascotInterfaceControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D31D6A249AA8E1008AB737 /* MascotInterfaceControlle.swift */; };
+		A1D31D6D249AB19D008AB737 /* MascotScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D31D6C249AB19D008AB737 /* MascotScene.swift */; };
+		CF19152424A140CB0063B978 /* MessageRestart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF19152324A140CB0063B978 /* MessageRestart.swift */; };
+		CF19152624A141540063B978 /* RestartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF19152524A141540063B978 /* RestartViewModel.swift */; };
+		CF19152824A141D10063B978 /* MessageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF19152724A141D10063B978 /* MessageCard.swift */; };
+		CF7A0D86249D4F4A003ECB84 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7A0D85249D4F4A003ECB84 /* Card.storyboard */; };
+		CF7A0D8D249E9C58003ECB84 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7A0D8C249E9C58003ECB84 /* HealthKit.framework */; };
+		CF7A0D92249EA9F6003ECB84 /* SF-Compact-Text-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF7A0D91249EA3C5003ECB84 /* SF-Compact-Text-Medium.ttf */; };
+		CF7A0D93249EA9F7003ECB84 /* SF-Compact-Text-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF7A0D91249EA3C5003ECB84 /* SF-Compact-Text-Medium.ttf */; };
+		CF9BD2F024A13BA90089AE64 /* CardInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9BD2EF24A13BA90089AE64 /* CardInterfaceController.swift */; };
+		CF9BD2F224A13BB00089AE64 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9BD2F124A13BB00089AE64 /* Card.swift */; };
+		CF9BD2F424A13BB40089AE64 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9BD2F324A13BB40089AE64 /* CardData.swift */; };
+		CF9BD2F624A13BBD0089AE64 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9BD2F524A13BBD0089AE64 /* CardsViewModel.swift */; };
+		CF9BD2FC24A13F070089AE64 /* RestartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9BD2FB24A13F070089AE64 /* RestartInterfaceController.swift */; };
+		CF9BD2FE24A13F330089AE64 /* Restart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9BD2FD24A13F330089AE64 /* Restart.storyboard */; };
+		CFE64BE1249174330091AAC5 /* Jaque WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CFE64BE0249174330091AAC5 /* Jaque WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CFE64BE9249174370091AAC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE64BE8249174370091AAC5 /* Assets.xcassets */; };
+		CFE64BF0249174370091AAC5 /* Jaque WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CFE64BEF249174370091AAC5 /* Jaque WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CFE64BF7249174370091AAC5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE64BF6249174370091AAC5 /* ExtensionDelegate.swift */; };
+		CFE64BF9249174370091AAC5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE64BF8249174370091AAC5 /* NotificationController.swift */; };
+		CFE64BFB249174390091AAC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE64BFA249174390091AAC5 /* Assets.xcassets */; };
+		CFFC2BC524AFFA81008B1CF7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFC2BC424AFFA81008B1CF7 /* ComplicationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFE64BE2249174330091AAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFE64BD6249174320091AAC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFE64BDF249174330091AAC5;
+			remoteInfo = "Jaque WatchKit App";
+		};
+		CFE64BF1249174370091AAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFE64BD6249174320091AAC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFE64BEE249174370091AAC5;
+			remoteInfo = "Jaque WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CFE64C03249174390091AAC5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CFE64BF0249174370091AAC5 /* Jaque WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE64C07249174390091AAC5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CFE64BE1249174330091AAC5 /* Jaque WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2E0F5620249A8B0400BDF38E /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
+		2E0F5623249AB8F000BDF38E /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		2E0F5626249ABB5B00BDF38E /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		2E2767AF249D25EE000E7A35 /* NotificationExerciseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExerciseController.swift; sourceTree = "<group>"; };
+		3A340401249BFD7F00DF3600 /* HealthKitFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitFormatter.swift; sourceTree = "<group>"; };
+		3A340403249BFDC600DF3600 /* AchievementsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsController.swift; sourceTree = "<group>"; };
+		3A340405249BFDE300DF3600 /* Classification+Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Classification+Classes.swift"; sourceTree = "<group>"; };
+		3A340408249C037900DF3600 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		3A5F8C262497F346003A8859 /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
+		3A9C38922497FD9100E434D9 /* MascotState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotState.swift; sourceTree = "<group>"; };
+		3A9EEFE124ABC5E90071865E /* AchievementsSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AchievementsSB.storyboard; sourceTree = "<group>"; };
+		3A9EEFE524ABC70E0071865E /* AchievementsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInterfaceController.swift; sourceTree = "<group>"; };
+		3AA34F0624A15BD200D69E07 /* PresentRestartControllet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentRestartControllet.swift; sourceTree = "<group>"; };
+		3AB103DB24AFABD200686887 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3AB103DD24AFABD600686887 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3AC8362B2497EEE100692393 /* MascotController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotController.swift; sourceTree = "<group>"; };
+		3AE27A302497E70500CEC01E /* Mascot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mascot.swift; sourceTree = "<group>"; };
+		3AE27A322497E74600CEC01E /* Exercisable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercisable.swift; sourceTree = "<group>"; };
+		3AE27A342497E76200CEC01E /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		A1259ABA249E9C370094E393 /* MascotAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotAnimations.swift; sourceTree = "<group>"; };
+		A12D87B524A4373700A0FB12 /* Infoa.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Infoa.plist; sourceTree = "<group>"; };
+		A19C1FB024A658D6000B9E18 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		A19D7B3D24A9639800541B15 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A19D7B3F24A965D000541B15 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
+		A19D7B4124A966FE00541B15 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		A19EDB2724A98AF100F021E2 /* FinalOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalOnboardingView.swift; sourceTree = "<group>"; };
+		A1A4805324A96F5D00BFF329 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		A1A4805524A97CA500BFF329 /* OnboardingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScene.swift; sourceTree = "<group>"; };
+		A1D31D68249AA846008AB737 /* MascotInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MascotInterface.storyboard; sourceTree = "<group>"; };
+		A1D31D6A249AA8E1008AB737 /* MascotInterfaceControlle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotInterfaceControlle.swift; sourceTree = "<group>"; };
+		A1D31D6C249AB19D008AB737 /* MascotScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotScene.swift; sourceTree = "<group>"; };
+		CF19152324A140CB0063B978 /* MessageRestart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRestart.swift; sourceTree = "<group>"; };
+		CF19152524A141540063B978 /* RestartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartViewModel.swift; sourceTree = "<group>"; };
+		CF19152724A141D10063B978 /* MessageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCard.swift; sourceTree = "<group>"; };
+		CF7A0D85249D4F4A003ECB84 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
+		CF7A0D8C249E9C58003ECB84 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		CF7A0D91249EA3C5003ECB84 /* SF-Compact-Text-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Medium.ttf"; sourceTree = "<group>"; };
+		CF9BD2EF24A13BA90089AE64 /* CardInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardInterfaceController.swift; sourceTree = "<group>"; };
+		CF9BD2F124A13BB00089AE64 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CF9BD2F324A13BB40089AE64 /* CardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		CF9BD2F524A13BBD0089AE64 /* CardsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		CF9BD2FB24A13F070089AE64 /* RestartInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartInterfaceController.swift; sourceTree = "<group>"; };
+		CF9BD2FD24A13F330089AE64 /* Restart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Restart.storyboard; sourceTree = "<group>"; };
+		CFE64BDC249174320091AAC5 /* Jaque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jaque.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE64BE0249174330091AAC5 /* Jaque WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jaque WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE64BE8249174370091AAC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFE64BEA249174370091AAC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE64BEF249174370091AAC5 /* Jaque WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Jaque WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE64BF6249174370091AAC5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CFE64BF8249174370091AAC5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CFE64BFA249174390091AAC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFE64BFC249174390091AAC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE64BFD249174390091AAC5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CFFC2BC424AFFA81008B1CF7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFE64BEC249174370091AAC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7A0D8D249E9C58003ECB84 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E0F5625249ABB3800BDF38E /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				2E0F5626249ABB5B00BDF38E /* Notification.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		3A340400249BFD6700DF3600 /* HealthKitConnection */ = {
+			isa = PBXGroup;
+			children = (
+				3A340401249BFD7F00DF3600 /* HealthKitFormatter.swift */,
+			);
+			path = HealthKitConnection;
+			sourceTree = "<group>";
+		};
+		3A340407249C036D00DF3600 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3A340408249C037900DF3600 /* UserDefault.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3A9C38902497FD5200E434D9 /* Mascot */ = {
+			isa = PBXGroup;
+			children = (
+				3AE27A302497E70500CEC01E /* Mascot.swift */,
+				3A9C38922497FD9100E434D9 /* MascotState.swift */,
+			);
+			path = Mascot;
+			sourceTree = "<group>";
+		};
+		3A9C38912497FD6C00E434D9 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				3AE27A342497E76200CEC01E /* Achievements.swift */,
+				3A340403249BFDC600DF3600 /* AchievementsController.swift */,
+				3A340405249BFDE300DF3600 /* Classification+Classes.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		3AC8362D2497F12C00692393 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				3AE27A322497E74600CEC01E /* Exercisable.swift */,
+				3A5F8C262497F346003A8859 /* Exercises.swift */,
+				3AA34F0624A15BD200D69E07 /* PresentRestartControllet.swift */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		3AE27A2F2497E6DC00CEC01E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E0F5625249ABB3800BDF38E /* Notification */,
+				3A9C38912497FD6C00E434D9 /* Achievements */,
+				3A9C38902497FD5200E434D9 /* Mascot */,
+				3AC8362D2497F12C00692393 /* Exercises */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AE27A362497E7C000CEC01E /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFE64BF8249174370091AAC5 /* NotificationController.swift */,
+				3AC8362B2497EEE100692393 /* MascotController.swift */,
+				2E2767AF249D25EE000E7A35 /* NotificationExerciseController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		A19C1FB224A660CA000B9E18 /* Onbarding */ = {
+			isa = PBXGroup;
+			children = (
+				A19D7B3A24A9634800541B15 /* View */,
+				A19D7B3B24A9635100541B15 /* ViewModel */,
+				A19D7B3C24A9635F00541B15 /* Model */,
+			);
+			path = Onbarding;
+			sourceTree = "<group>";
+		};
+		A19D7B3A24A9634800541B15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A19D7B3D24A9639800541B15 /* OnboardingView.swift */,
+				A19EDB2724A98AF100F021E2 /* FinalOnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A19D7B3B24A9635100541B15 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1A4805324A96F5D00BFF329 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A19D7B3C24A9635F00541B15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A19D7B3F24A965D000541B15 /* OnboardingData.swift */,
+				A19D7B4124A966FE00541B15 /* OnboardingModel.swift */,
+				A1A4805524A97CA500BFF329 /* OnboardingScene.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF7A0D71249D4BC4003ECB84 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A0D74249D4BEC003ECB84 /* View */,
+				CF7A0D73249D4BE4003ECB84 /* ViewModel */,
+				CF7A0D72249D4BD6003ECB84 /* Model */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		CF7A0D72249D4BD6003ECB84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF9BD2F324A13BB40089AE64 /* CardData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF7A0D73249D4BE4003ECB84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF9BD2F524A13BBD0089AE64 /* CardsViewModel.swift */,
+				CF9BD2F124A13BB00089AE64 /* Card.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF7A0D74249D4BEC003ECB84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF9BD2EF24A13BA90089AE64 /* CardInterfaceController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF7A0D8B249E9C58003ECB84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A0D8C249E9C58003ECB84 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF9BD2F724A13EB60089AE64 /* Restart */ = {
+			isa = PBXGroup;
+			children = (
+				CF9BD2FA24A13ED50089AE64 /* View */,
+				CF9BD2F924A13ED10089AE64 /* ViewModel */,
+				CF9BD2F824A13ECD0089AE64 /* Model */,
+			);
+			path = Restart;
+			sourceTree = "<group>";
+		};
+		CF9BD2F824A13ECD0089AE64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF19152324A140CB0063B978 /* MessageRestart.swift */,
+				CF19152724A141D10063B978 /* MessageCard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF9BD2F924A13ED10089AE64 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF19152524A141540063B978 /* RestartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF9BD2FA24A13ED50089AE64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF9BD2FB24A13F070089AE64 /* RestartInterfaceController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFE64BD5249174320091AAC5 = {
+			isa = PBXGroup;
+			children = (
+				A12D87B524A4373700A0FB12 /* Infoa.plist */,
+				CFE64BE4249174330091AAC5 /* Jaque WatchKit App */,
+				CFE64BF3249174370091AAC5 /* Jaque WatchKit Extension */,
+				CFE64BDD249174320091AAC5 /* Products */,
+				CF7A0D8B249E9C58003ECB84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFE64BDD249174320091AAC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFE64BDC249174320091AAC5 /* Jaque.app */,
+				CFE64BE0249174330091AAC5 /* Jaque WatchKit App.app */,
+				CFE64BEF249174370091AAC5 /* Jaque WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFE64BE4249174330091AAC5 /* Jaque WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A1D31D68249AA846008AB737 /* MascotInterface.storyboard */,
+				CFE64BE8249174370091AAC5 /* Assets.xcassets */,
+				CFE64BEA249174370091AAC5 /* Info.plist */,
+				2E0F5623249AB8F000BDF38E /* Notification.storyboard */,
+				CF7A0D85249D4F4A003ECB84 /* Card.storyboard */,
+				CF9BD2FD24A13F330089AE64 /* Restart.storyboard */,
+				A19C1FB024A658D6000B9E18 /* Onboarding.storyboard */,
+				3A9EEFE124ABC5E90071865E /* AchievementsSB.storyboard */,
+			);
+			path = "Jaque WatchKit App";
+			sourceTree = "<group>";
+		};
+		CFE64BF3249174370091AAC5 /* Jaque WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC2BC324AFFA6D008B1CF7 /* Complication */,
+				3AB103DC24AFABD200686887 /* Localizable.strings */,
+				CF9BD2F724A13EB60089AE64 /* Restart */,
+				CF7A0D71249D4BC4003ECB84 /* Card */,
+				3A340407249C036D00DF3600 /* Utils */,
+				A19C1FB224A660CA000B9E18 /* Onbarding */,
+				3A340400249BFD6700DF3600 /* HealthKitConnection */,
+				3AE27A362497E7C000CEC01E /* Model Controller */,
+				3AE27A2F2497E6DC00CEC01E /* Models */,
+				A1259ABA249E9C370094E393 /* MascotAnimations.swift */,
+				A1D31D6A249AA8E1008AB737 /* MascotInterfaceControlle.swift */,
+				A1D31D6C249AB19D008AB737 /* MascotScene.swift */,
+				CFE64BF6249174370091AAC5 /* ExtensionDelegate.swift */,
+				2E0F5620249A8B0400BDF38E /* LocalNotification.swift */,
+				CFE64BFA249174390091AAC5 /* Assets.xcassets */,
+				CFE64BFC249174390091AAC5 /* Info.plist */,
+				3A9EEFE524ABC70E0071865E /* AchievementsInterfaceController.swift */,
+				CF7A0D91249EA3C5003ECB84 /* SF-Compact-Text-Medium.ttf */,
+				CFE64BFD249174390091AAC5 /* PushNotificationPayload.apns */,
+			);
+			path = "Jaque WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CFFC2BC324AFFA6D008B1CF7 /* Complication */ = {
+			isa = PBXGroup;
+			children = (
+				CFFC2BC424AFFA81008B1CF7 /* ComplicationController.swift */,
+			);
+			path = Complication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFE64BDB249174320091AAC5 /* Jaque */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE64C08249174390091AAC5 /* Build configuration list for PBXNativeTarget "Jaque" */;
+			buildPhases = (
+				CFE64BDA249174320091AAC5 /* Resources */,
+				CFE64C07249174390091AAC5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFE64BE3249174330091AAC5 /* PBXTargetDependency */,
+			);
+			name = Jaque;
+			productName = Jaque;
+			productReference = CFE64BDC249174320091AAC5 /* Jaque.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CFE64BDF249174330091AAC5 /* Jaque WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE64C04249174390091AAC5 /* Build configuration list for PBXNativeTarget "Jaque WatchKit App" */;
+			buildPhases = (
+				CFE64BDE249174330091AAC5 /* Resources */,
+				CFE64C03249174390091AAC5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFE64BF2249174370091AAC5 /* PBXTargetDependency */,
+			);
+			name = "Jaque WatchKit App";
+			productName = "Jaque WatchKit App";
+			productReference = CFE64BE0249174330091AAC5 /* Jaque WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CFE64BEE249174370091AAC5 /* Jaque WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE64C00249174390091AAC5 /* Build configuration list for PBXNativeTarget "Jaque WatchKit Extension" */;
+			buildPhases = (
+				CFE64BEB249174370091AAC5 /* Sources */,
+				CFE64BEC249174370091AAC5 /* Frameworks */,
+				CFE64BED249174370091AAC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jaque WatchKit Extension";
+			productName = "Jaque WatchKit Extension";
+			productReference = CFE64BEF249174370091AAC5 /* Jaque WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFE64BD6249174320091AAC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Lelio Jorge Junior";
+				TargetAttributes = {
+					CFE64BDB249174320091AAC5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					CFE64BDF249174330091AAC5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					CFE64BEE249174370091AAC5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = CFE64BD9249174320091AAC5 /* Build configuration list for PBXProject "Jaque" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"pt-BR",
+			);
+			mainGroup = CFE64BD5249174320091AAC5;
+			productRefGroup = CFE64BDD249174320091AAC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFE64BDB249174320091AAC5 /* Jaque */,
+				CFE64BDF249174330091AAC5 /* Jaque WatchKit App */,
+				CFE64BEE249174370091AAC5 /* Jaque WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFE64BDA249174320091AAC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB103DF24AFADF500686887 /* Localizable.strings in Resources */,
+				A12D87B624A4373700A0FB12 /* Infoa.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE64BDE249174330091AAC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D31D69249AA846008AB737 /* MascotInterface.storyboard in Resources */,
+				CF7A0D86249D4F4A003ECB84 /* Card.storyboard in Resources */,
+				A12D87B724A4373700A0FB12 /* Infoa.plist in Resources */,
+				CFE64BE9249174370091AAC5 /* Assets.xcassets in Resources */,
+				CF7A0D92249EA9F6003ECB84 /* SF-Compact-Text-Medium.ttf in Resources */,
+				A19C1FB124A658D6000B9E18 /* Onboarding.storyboard in Resources */,
+				3A9EEFE224ABC5E90071865E /* AchievementsSB.storyboard in Resources */,
+				2E0F5624249AB8F000BDF38E /* Notification.storyboard in Resources */,
+				3AB103DA24AFABD200686887 /* Localizable.strings in Resources */,
+				CF9BD2FE24A13F330089AE64 /* Restart.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE64BED249174370091AAC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2B99B249BF957007F1D1F /* Assets.xcassets in Resources */,
+				CFE64BFB249174390091AAC5 /* Assets.xcassets in Resources */,
+				3AB103DE24AFADF400686887 /* Localizable.strings in Resources */,
+				CF7A0D93249EA9F7003ECB84 /* SF-Compact-Text-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFE64BEB249174370091AAC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A340409249C037900DF3600 /* UserDefault.swift in Sources */,
+				CF9BD2F024A13BA90089AE64 /* CardInterfaceController.swift in Sources */,
+				CF19152624A141540063B978 /* RestartViewModel.swift in Sources */,
+				A19D7B3E24A9639800541B15 /* OnboardingView.swift in Sources */,
+				A19D7B4224A966FF00541B15 /* OnboardingModel.swift in Sources */,
+				3A9C38932497FD9100E434D9 /* MascotState.swift in Sources */,
+				CF9BD2F424A13BB40089AE64 /* CardData.swift in Sources */,
+				3AC8362C2497EEE100692393 /* MascotController.swift in Sources */,
+				2E2767B0249D25EE000E7A35 /* NotificationExerciseController.swift in Sources */,
+				CF19152824A141D10063B978 /* MessageCard.swift in Sources */,
+				CFE64BF9249174370091AAC5 /* NotificationController.swift in Sources */,
+				A1A4805624A97CA500BFF329 /* OnboardingScene.swift in Sources */,
+				3A340402249BFD7F00DF3600 /* HealthKitFormatter.swift in Sources */,
+				A19EDB2824A98AF100F021E2 /* FinalOnboardingView.swift in Sources */,
+				CF9BD2FC24A13F070089AE64 /* RestartInterfaceController.swift in Sources */,
+				A19D7B4024A965D000541B15 /* OnboardingData.swift in Sources */,
+				3AA34F0724A15BD200D69E07 /* PresentRestartControllet.swift in Sources */,
+				A1D31D6B249AA8E1008AB737 /* MascotInterfaceControlle.swift in Sources */,
+				3A340406249BFDE300DF3600 /* Classification+Classes.swift in Sources */,
+				3AE27A352497E76200CEC01E /* Achievements.swift in Sources */,
+				A1A4805424A96F5D00BFF329 /* OnboardingViewModel.swift in Sources */,
+				CFE64BF7249174370091AAC5 /* ExtensionDelegate.swift in Sources */,
+				3AE27A332497E74600CEC01E /* Exercisable.swift in Sources */,
+				A1259ABB249E9C370094E393 /* MascotAnimations.swift in Sources */,
+				3A5F8C272497F346003A8859 /* Exercises.swift in Sources */,
+				3A340404249BFDC600DF3600 /* AchievementsController.swift in Sources */,
+				A1D31D6D249AB19D008AB737 /* MascotScene.swift in Sources */,
+				3AE27A312497E70500CEC01E /* Mascot.swift in Sources */,
+				2E0F5627249ABB5B00BDF38E /* Notification.swift in Sources */,
+				CF9BD2F624A13BBD0089AE64 /* CardsViewModel.swift in Sources */,
+				2E0F5621249A8B0400BDF38E /* LocalNotification.swift in Sources */,
+				3A9EEFE624ABC70E0071865E /* AchievementsInterfaceController.swift in Sources */,
+				CFFC2BC524AFFA81008B1CF7 /* ComplicationController.swift in Sources */,
+				CF9BD2F224A13BB00089AE64 /* Card.swift in Sources */,
+				CF19152424A140CB0063B978 /* MessageRestart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFE64BE3249174330091AAC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFE64BDF249174330091AAC5 /* Jaque WatchKit App */;
+			targetProxy = CFE64BE2249174330091AAC5 /* PBXContainerItemProxy */;
+		};
+		CFE64BF2249174370091AAC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFE64BEE249174370091AAC5 /* Jaque WatchKit Extension */;
+			targetProxy = CFE64BF1249174370091AAC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AB103DC24AFABD200686887 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AB103DB24AFABD200686887 /* pt-BR */,
+				3AB103DD24AFABD600686887 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFE64BFE249174390091AAC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFE64BFF249174390091AAC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFE64C01249174390091AAC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Jaque WatchKit Extension/Jaque WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XC82T888PP;
+				INFOPLIST_FILE = "Jaque WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jaque.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		CFE64C02249174390091AAC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Jaque WatchKit Extension/Jaque WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XC82T888PP;
+				INFOPLIST_FILE = "Jaque WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jaque.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		CFE64C05249174390091AAC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XC82T888PP;
+				IBSC_MODULE = Jaque_WatchKit_Extension;
+				INFOPLIST_FILE = "Jaque WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jaque.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		CFE64C06249174390091AAC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XC82T888PP;
+				IBSC_MODULE = Jaque_WatchKit_Extension;
+				INFOPLIST_FILE = "Jaque WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jaque.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		CFE64C09249174390091AAC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XC82T888PP;
+				INFOPLIST_FILE = Infoa.plist;
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jaque;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CFE64C0A249174390091AAC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XC82T888PP;
+				INFOPLIST_FILE = Infoa.plist;
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jaque;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFE64BD9249174320091AAC5 /* Build configuration list for PBXProject "Jaque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE64BFE249174390091AAC5 /* Debug */,
+				CFE64BFF249174390091AAC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFE64C00249174390091AAC5 /* Build configuration list for PBXNativeTarget "Jaque WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE64C01249174390091AAC5 /* Debug */,
+				CFE64C02249174390091AAC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFE64C04249174390091AAC5 /* Build configuration list for PBXNativeTarget "Jaque WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE64C05249174390091AAC5 /* Debug */,
+				CFE64C06249174390091AAC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFE64C08249174390091AAC5 /* Build configuration list for PBXNativeTarget "Jaque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE64C09249174390091AAC5 /* Debug */,
+				CFE64C0A249174390091AAC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFE64BD6249174320091AAC5 /* Project object */;
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8I3-2O-hQB">
+    <device id="watch40"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--MascotinterfaceController-->
+        <scene sceneID="FAQ-fq-Ack">
+            <objects>
+                <controller identifier="MascotinterfaceController" id="8I3-2O-hQB" customClass="MascotInterfaceControlle" customModule="Jaque_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="7" alignment="left" id="bO2-VG-iIV"/>
+                        <spriteKitScene width="140" height="0.80000000000000004" alignment="center" id="fYa-O4-QP0">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="wki-LS-Klg">
+                                    <connections>
+                                        <action selector="tapOnScene:" destination="8I3-2O-hQB" id="HRi-gY-V5C"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </spriteKitScene>
+                        <group width="45" height="45" alignment="center" verticalAlignment="bottom" id="awl-2R-Bi6">
+                            <items>
+                                <button alignment="left" backgroundImage="HeartButtonNoAlpha" id="M2a-X5-0CD">
+                                    <connections>
+                                        <action selector="activityButton" destination="8I3-2O-hQB" id="U5o-ec-loc"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="actvtyButton" destination="M2a-X5-0CD" id="yxG-Pm-CLE"/>
+                        <outlet property="mascotScene" destination="fYa-O4-QP0" id="r8M-0r-6B3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-86.46913580246914" y="-127.28426395939086"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.069293372330000005" green="0.93389153479999998" blue="0.47050136329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <resources>
+        <image name="HeartButtonNoAlpha" width="45" height="45"/>
+    </resources>
+</document>

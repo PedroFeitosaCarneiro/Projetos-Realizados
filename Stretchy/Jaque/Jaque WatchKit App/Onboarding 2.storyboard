@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial-->
+        <scene sceneID="yXW-uF-v1N">
+            <objects>
+                <controller identifier="Onboarding" title="Tutorial" id="1b3-d9-wXg" customClass="OnboardingView" customModule="Jaque_WatchKit_Extension">
+                    <items>
+                        <group width="136" height="87" alignment="center" id="cQi-MP-8Ri">
+                            <items>
+                                <label width="136" height="90" alignment="center" verticalAlignment="center" text="Olá. Eu sou o Jaque. Seu amigo de alongamento." textAlignment="center" numberOfLines="0" id="vis-3K-KpZ"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="QOj-fB-1Cg">
+                            <items>
+                                <spriteKitScene alignment="center" verticalAlignment="center" id="HxT-UH-fYu"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="onboardingPhase" destination="vis-3K-KpZ" id="6U7-6Y-GJD"/>
+                        <outlet property="onboardingScene" destination="HxT-UH-fYu" id="cPN-fp-g9q"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-233.56521739130434" y="279.28571428571428"/>
+        </scene>
+        <!--Tutorial-->
+        <scene sceneID="gfw-ev-2xG">
+            <objects>
+                <controller identifier="finalOnboarding" title="Tutorial" id="J46-RK-kDS" customClass="FinalOnboardingView" customModule="Jaque_WatchKit_Extension">
+                    <items>
+                        <group width="136" height="87" alignment="center" id="Xv2-3G-36p">
+                            <items>
+                                <label width="136" height="90" alignment="center" verticalAlignment="center" text="Vamos começar? Clique no botão abaixo." textAlignment="center" numberOfLines="0" id="QEf-Fx-OsA"/>
+                            </items>
+                        </group>
+                        <button width="65" height="65" alignment="center" verticalAlignment="center" backgroundImage="Coracao" id="gQP-1E-Lz9">
+                            <connections>
+                                <action selector="clickButton" destination="J46-RK-kDS" id="Urs-PY-IWU"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="heartButton" destination="gQP-1E-Lz9" id="hll-oo-Gw7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="38" y="279"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Coracao" width="45.5" height="45.5"/>
+    </resources>
+</document>
